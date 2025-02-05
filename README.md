@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Name
 
-## Getting Started
+## Overview
 
-First, run the development server:
+A brief description of your project.
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ (LTS recommended)
+- npm or yarn or pnpm
+- Git
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Copy the example environment file:
+```bash
+cp .env.example .env.local
+```
+
+4. Update the environment variables in `.env.local`
+
+5. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── src/
+│   ├── app/                 # App router pages and layouts
+│   ├── components/          # Reusable components
+│   │   ├── ui/             # UI components
+│   │   └── shared/         # Shared components
+│   ├── lib/                # Utility functions and libraries
+│   ├── styles/             # Global styles
+│   └── types/              # TypeScript type definitions
+├── public/                 # Static files
+├── tests/                  # Test files
+└── ...config files
+```
 
-## Learn More
+## 🧱 Built With
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) - The React Framework
+- [TypeScript](https://www.typescriptlang.org/) - Type checking
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [ESLint](https://eslint.org/) - Linting
+- [Prettier](https://prettier.io/) - Code Formatting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Development Workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Create a new branch for your feature/fix:
+```bash
+git checkout -b feature/your-feature-name
+```
 
-## Deploy on Vercel
+2. Make your changes and commit using conventional commits:
+```bash
+git commit -m "feat: add new feature"
+git commit -m "fix: resolve bug issue"
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Push your branch and create a Pull Request:
+```bash
+git push origin feature/your-feature-name
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+This project is configured for deployment on Vercel:
+
+1. Push your changes to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically deploy your changes
+
+### Manual Deployment
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+
+## 🧪 Testing
+
+```bash
+# Run tests
+npm run test
+# or
+yarn test
+# or
+pnpm test
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+## 📦 Available Scripts
+
+- `dev` - Start development server
+- `build` - Build for production
+- `start` - Start production server
+- `lint` - Lint code
+- `test` - Run tests
+- `type-check` - Check types
+
+## 🤝 Contributing
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
