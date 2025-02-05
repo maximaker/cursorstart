@@ -1,0 +1,93 @@
+{
+  "editor": {
+    "formatOnSave": true,
+    "defaultFormatter": "prettier",
+    "tabSize": 2,
+    "insertSpaces": true,
+    "rulers": [80, 100],
+    "wordWrap": "off",
+    "trimTrailingWhitespace": true,
+    "insertFinalNewline": true
+  },
+  "typescript": {
+    "suggestionActions": {
+      "enabled": true
+    },
+    "preferences": {
+      "importModuleSpecifier": "non-relative",
+      "quoteStyle": "single"
+    },
+    "validate": {
+      "enable": true
+    }
+  },
+  "javascript": {
+    "format": {
+      "semicolons": true,
+      "singleQuote": true
+    }
+  },
+  "files": {
+    "exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/coverage": true
+    },
+    "watcherExclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true
+    }
+  },
+  "search": {
+    "exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/coverage": true
+    }
+  },
+  "git": {
+    "enabled": true,
+    "autofetch": true,
+    "confirmSync": true
+  },
+  "terminal": {
+    "integrated": {
+      "defaultProfile": {
+        "windows": "PowerShell",
+        "linux": "bash",
+        "osx": "zsh"
+      }
+    }
+  },
+  "workbench": {
+    "iconTheme": "material-icon-theme",
+    "colorTheme": "GitHub Dark Default"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "printWidth": 100,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  },
+  "eslint": {
+    "run": "onSave",
+    "validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"]
+  },
+  "tailwindCSS": {
+    "validate": true,
+    "lint": {
+      "cssConflict": "warning",
+      "invalidApply": "error",
+      "invalidScreen": "error",
+      "invalidVariant": "error",
+      "invalidConfigPath": "error",
+      "invalidTailwindDirective": "error"
+    }
+  }
+} 
