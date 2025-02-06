@@ -1,8 +1,8 @@
-# Project Name
+# Cursor Starter
 
 ## Overview
 
-A brief description of your project.
+Starting point for a new Cursor AI project in Typescript
 
 ## 🚀 Getting Started
 
@@ -23,10 +23,6 @@ cd your-repo-name
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
 ```
 
 3. Copy the example environment file:
@@ -39,10 +35,6 @@ cp .env.example .env.local
 5. Start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
