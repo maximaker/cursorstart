@@ -1,0 +1,44 @@
+<PROJECT_OVERVIEW>
+This project is a web application built using Next.js, a React framework that enables server-side rendering and static site generation. The application utilizes various UI components and state management libraries to create a responsive and interactive user experience.
+</PROJECT_OVERVIEW>
+
+<CODE_STYLE>
+ - Follow the Airbnb JavaScript Style Guide for consistent code formatting.
+ - Use TypeScript for type safety and better developer experience.
+ - Write clean, modular, and reusable components.
+ - Use descriptive variable and function names.
+ - Keep components small and focused on a single responsibility.
+</CODE_STYLE>
+
+<FRAMEWORK_GUIDELINES>
+ - Utilize Next.js features such as API routes and dynamic routing effectively.
+ - Leverage server-side rendering for pages that require SEO optimization.
+ - Use static site generation for pages that can be pre-rendered at build time.
+ - Optimize images and assets using Next.js built-in Image component.
+ - Implement client-side navigation using Next.js Link component for better performance.
+</FRAMEWORK_GUIDELINES>
+
+<AVAILABLE_PACKAGES>
+ - @hookform/resolvers: Integrates validation libraries with React Hook Form for easier form handling and validation.
+ - @radix-ui/react-accordion: Provides accessible accordion components for displaying collapsible content.
+ - @radix-ui/react-avatar: Offers customizable avatar components for user profile images.
+ - @radix-ui/react-checkbox: Implements accessible checkbox components for user input.
+ - @radix-ui/react-icons: A collection of icons for use in the application, enhancing UI design.
+ - @radix-ui/react-label: Provides accessible label components for form elements.
+ - @radix-ui/react-slot: Enables the creation of flexible and composable components.
+ - @radix-ui/react-switch: Implements accessible toggle switch components for user preferences.
+ - @radix-ui/react-tabs: Provides accessible tab components for organizing content.
+ - @radix-ui/react-tooltip: Offers tooltip components for additional information on hover.
+ - class-variance-authority: A utility for managing class names based on variants, improving styling consistency.
+ - clsx: A utility for conditionally joining class names together, simplifying class management.
+ - framer-motion: A library for creating animations and transitions in React applications, enhancing user experience.
+ - lucide-react: A set of customizable icons for use in the application, improving visual appeal.
+ - next: The core framework for building the application, providing routing, server-side rendering, and static site generation.
+ - next-themes: A library for managing theme switching (e.g., light/dark mode) in Next.js applications.
+ - react: The core library for building user interfaces, enabling component-based architecture.
+ - react-dom: Provides DOM-specific methods for React, enabling rendering of components to the DOM.
+ - react-hook-form: A library for managing form state and validation in React applications, simplifying form handling.
+ - tailwind-merge: A utility for merging Tailwind CSS class names, ensuring no conflicting styles.
+ - tailwindcss-animate: A library for adding animations to Tailwind CSS classes, enhancing UI interactions.
+ - zod: A TypeScript-first schema declaration and validation library, useful for validating data structures.
+</AVAILABLE_PACKAGES>
