@@ -7,7 +7,46 @@
     "rulers": [80, 100],
     "wordWrap": "off",
     "trimTrailingWhitespace": true,
-    "insertFinalNewline": true
+    "insertFinalNewline": true,
+    "codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    }
+  },
+  "ai": {
+    "enabled": true,
+    "autoComplete": {
+      "enabled": true,
+      "language": {
+        "typescript": true,
+        "javascript": true,
+        "typescriptreact": true,
+        "javascriptreact": true
+      },
+      "threshold": 0.7
+    },
+    "codeAnalysis": {
+      "enabled": true,
+      "suggestions": true,
+      "security": true,
+      "performance": true,
+      "accessibility": true
+    },
+    "documentation": {
+      "enabled": true,
+      "generateComments": true,
+      "style": "jsdoc"
+    },
+    "pairProgramming": {
+      "enabled": true,
+      "mode": "collaborative",
+      "contextAwareness": true
+    },
+    "snippets": {
+      "enabled": true,
+      "customization": true,
+      "shareableSnippets": true
+    }
   },
   "typescript": {
     "suggestionActions": {
@@ -32,12 +71,20 @@
       "**/node_modules": true,
       "**/dist": true,
       "**/.next": true,
-      "**/coverage": true
+      "**/coverage": true,
+      "**/.git": true,
+      "**/.DS_Store": true
     },
     "watcherExclude": {
       "**/node_modules": true,
       "**/dist": true,
-      "**/.next": true
+      "**/.next": true,
+      "**/.git": true
+    },
+    "associations": {
+      "*.tsx": "typescriptreact",
+      "*.jsx": "javascriptreact",
+      "*.mdx": "markdown"
     }
   },
   "search": {
@@ -45,13 +92,20 @@
       "**/node_modules": true,
       "**/dist": true,
       "**/.next": true,
-      "**/coverage": true
+      "**/coverage": true,
+      "**/.git": true
+    },
+    "quickOpen": {
+      "includeSymbols": true,
+      "includeHistory": true
     }
   },
   "git": {
     "enabled": true,
     "autofetch": true,
-    "confirmSync": true
+    "confirmSync": true,
+    "smartCommit": true,
+    "branchProtection": true
   },
   "terminal": {
     "integrated": {
@@ -59,12 +113,26 @@
         "windows": "PowerShell",
         "linux": "bash",
         "osx": "zsh"
-      }
+      },
+      "fontSize": 14,
+      "lineHeight": 1.2,
+      "cursorStyle": "line",
+      "cursorBlinking": true
     }
   },
   "workbench": {
     "iconTheme": "material-icon-theme",
-    "colorTheme": "GitHub Dark Default"
+    "colorTheme": "GitHub Dark Default",
+    "tree": {
+      "indent": 20,
+      "renderIndentGuides": true
+    },
+    "editor": {
+      "minimap": {
+        "enabled": true,
+        "showSlider": "always"
+      }
+    }
   },
   "prettier": {
     "singleQuote": true,
@@ -73,11 +141,16 @@
     "semi": true,
     "printWidth": 100,
     "bracketSpacing": true,
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "endOfLine": "auto"
   },
   "eslint": {
     "run": "onSave",
-    "validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"]
+    "validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+    "packageManager": "npm",
+    "codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "tailwindCSS": {
     "validate": true,
@@ -88,6 +161,18 @@
       "invalidVariant": "error",
       "invalidConfigPath": "error",
       "invalidTailwindDirective": "error"
+    },
+    "experimental": {
+      "classRegex": ["class: '([^']*)'"]
+    }
+  },
+  "accessibility": {
+    "validate": true,
+    "level": "AA",
+    "rules": {
+      "aria-required": true,
+      "color-contrast": true,
+      "keyboard-navigation": true
     }
   }
 } 
